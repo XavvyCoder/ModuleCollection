@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		438F79B82A7BFE320057103D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438F79B72A7BFE320057103D /* AppDelegate.swift */; };
 		438F79BA2A7BFE320057103D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438F79B92A7BFE320057103D /* SceneDelegate.swift */; };
-		438F79BC2A7BFE320057103D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438F79BB2A7BFE320057103D /* ViewController.swift */; };
+		438F79BC2A7BFE320057103D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438F79BB2A7BFE320057103D /* MainViewController.swift */; };
 		438F79BF2A7BFE320057103D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438F79BD2A7BFE320057103D /* Main.storyboard */; };
 		438F79C22A7BFE320057103D /* ModuleCollection.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 438F79C02A7BFE320057103D /* ModuleCollection.xcdatamodeld */; };
 		438F79C42A7BFE340057103D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 438F79C32A7BFE340057103D /* Assets.xcassets */; };
@@ -17,6 +17,12 @@
 		438F79D22A7BFE340057103D /* ModuleCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438F79D12A7BFE340057103D /* ModuleCollectionTests.swift */; };
 		438F79DC2A7BFE340057103D /* ModuleCollectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438F79DB2A7BFE340057103D /* ModuleCollectionUITests.swift */; };
 		438F79DE2A7BFE340057103D /* ModuleCollectionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438F79DD2A7BFE340057103D /* ModuleCollectionUITestsLaunchTests.swift */; };
+		438F79EC2A7C00410057103D /* AlertHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438F79EB2A7C00410057103D /* AlertHandler.swift */; };
+		438F79EF2A7C00910057103D /* TCPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438F79EE2A7C00910057103D /* TCPViewController.swift */; };
+		438F79F12A7C00A00057103D /* TCPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438F79F02A7C00A00057103D /* TCPError.swift */; };
+		438F79F32A7C00BE0057103D /* TCPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438F79F22A7C00BE0057103D /* TCPHandler.swift */; };
+		438F79F62A7C037F0057103D /* SwiftSocket.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438F79F52A7C037F0057103D /* SwiftSocket.xcframework */; };
+		438F79F72A7C037F0057103D /* SwiftSocket.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 438F79F52A7C037F0057103D /* SwiftSocket.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +42,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		438F79F82A7C037F0057103D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				438F79F72A7C037F0057103D /* SwiftSocket.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		438F79B42A7BFE320057103D /* ModuleCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModuleCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		438F79B72A7BFE320057103D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		438F79B92A7BFE320057103D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		438F79BB2A7BFE320057103D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		438F79BB2A7BFE320057103D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		438F79BE2A7BFE320057103D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		438F79C12A7BFE320057103D /* ModuleCollection.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ModuleCollection.xcdatamodel; sourceTree = "<group>"; };
 		438F79C32A7BFE340057103D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +71,11 @@
 		438F79D72A7BFE340057103D /* ModuleCollectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModuleCollectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		438F79DB2A7BFE340057103D /* ModuleCollectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleCollectionUITests.swift; sourceTree = "<group>"; };
 		438F79DD2A7BFE340057103D /* ModuleCollectionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleCollectionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		438F79EB2A7C00410057103D /* AlertHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHandler.swift; sourceTree = "<group>"; };
+		438F79EE2A7C00910057103D /* TCPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCPViewController.swift; sourceTree = "<group>"; };
+		438F79F02A7C00A00057103D /* TCPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCPError.swift; sourceTree = "<group>"; };
+		438F79F22A7C00BE0057103D /* TCPHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCPHandler.swift; sourceTree = "<group>"; };
+		438F79F52A7C037F0057103D /* SwiftSocket.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwiftSocket.xcframework; path = Carthage/Build/SwiftSocket.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				438F79F62A7C037F0057103D /* SwiftSocket.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +111,7 @@
 				438F79D02A7BFE340057103D /* ModuleCollectionTests */,
 				438F79DA2A7BFE340057103D /* ModuleCollectionUITests */,
 				438F79B52A7BFE320057103D /* Products */,
+				438F79F42A7C037F0057103D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,9 +128,11 @@
 		438F79B62A7BFE320057103D /* ModuleCollection */ = {
 			isa = PBXGroup;
 			children = (
+				438F79ED2A7C00620057103D /* TCPModule */,
+				438F79EA2A7C00210057103D /* AlertModule */,
 				438F79B72A7BFE320057103D /* AppDelegate.swift */,
 				438F79B92A7BFE320057103D /* SceneDelegate.swift */,
-				438F79BB2A7BFE320057103D /* ViewController.swift */,
+				438F79BB2A7BFE320057103D /* MainViewController.swift */,
 				438F79BD2A7BFE320057103D /* Main.storyboard */,
 				438F79C32A7BFE340057103D /* Assets.xcassets */,
 				438F79C52A7BFE340057103D /* LaunchScreen.storyboard */,
@@ -130,6 +159,32 @@
 			path = ModuleCollectionUITests;
 			sourceTree = "<group>";
 		};
+		438F79EA2A7C00210057103D /* AlertModule */ = {
+			isa = PBXGroup;
+			children = (
+				438F79EB2A7C00410057103D /* AlertHandler.swift */,
+			);
+			path = AlertModule;
+			sourceTree = "<group>";
+		};
+		438F79ED2A7C00620057103D /* TCPModule */ = {
+			isa = PBXGroup;
+			children = (
+				438F79EE2A7C00910057103D /* TCPViewController.swift */,
+				438F79F22A7C00BE0057103D /* TCPHandler.swift */,
+				438F79F02A7C00A00057103D /* TCPError.swift */,
+			);
+			path = TCPModule;
+			sourceTree = "<group>";
+		};
+		438F79F42A7C037F0057103D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438F79F52A7C037F0057103D /* SwiftSocket.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,6 +195,7 @@
 				438F79B02A7BFE320057103D /* Sources */,
 				438F79B12A7BFE320057103D /* Frameworks */,
 				438F79B22A7BFE320057103D /* Resources */,
+				438F79F82A7C037F0057103D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,7 +317,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				438F79BC2A7BFE320057103D /* ViewController.swift in Sources */,
+				438F79F32A7C00BE0057103D /* TCPHandler.swift in Sources */,
+				438F79BC2A7BFE320057103D /* MainViewController.swift in Sources */,
+				438F79EC2A7C00410057103D /* AlertHandler.swift in Sources */,
+				438F79F12A7C00A00057103D /* TCPError.swift in Sources */,
+				438F79EF2A7C00910057103D /* TCPViewController.swift in Sources */,
 				438F79B82A7BFE320057103D /* AppDelegate.swift in Sources */,
 				438F79BA2A7BFE320057103D /* SceneDelegate.swift in Sources */,
 				438F79C22A7BFE320057103D /* ModuleCollection.xcdatamodeld in Sources */,
