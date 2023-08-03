@@ -1,0 +1,19 @@
+{
+  "commitish" : "2.1.0",
+  "iOS" : [
+    {
+      "swiftToolchainVersion" : "5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)",
+      "hash" : "590d293965bccba20031e288740e811533a5e58a1d5bc4958cfe0b80ad59b32b",
+      "name" : "SwiftSocket",
+      "container" : "SwiftSocket.xcframework",
+      "identifier" : "ios-arm64_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)",
+      "hash" : "bec46425173d4503542ccb9ead812fb9239ffb7186b6d2323820459bb3ed921b",
+      "name" : "SwiftSocket",
+      "container" : "SwiftSocket.xcframework",
+      "identifier" : "ios-arm64"
+    }
+  ]
+}

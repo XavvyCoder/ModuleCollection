@@ -21,8 +21,8 @@
 		438F79EF2A7C00910057103D /* TCPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438F79EE2A7C00910057103D /* TCPViewController.swift */; };
 		438F79F12A7C00A00057103D /* TCPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438F79F02A7C00A00057103D /* TCPError.swift */; };
 		438F79F32A7C00BE0057103D /* TCPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438F79F22A7C00BE0057103D /* TCPHandler.swift */; };
-		438F79F62A7C037F0057103D /* SwiftSocket.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438F79F52A7C037F0057103D /* SwiftSocket.xcframework */; };
-		438F79F72A7C037F0057103D /* SwiftSocket.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 438F79F52A7C037F0057103D /* SwiftSocket.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		438F79F92A7C08800057103D /* SwiftSocket.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438F79F52A7C037F0057103D /* SwiftSocket.xcframework */; };
+		438F79FA2A7C08800057103D /* SwiftSocket.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 438F79F52A7C037F0057103D /* SwiftSocket.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,13 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		438F79F82A7C037F0057103D /* Embed Frameworks */ = {
+		438F79FB2A7C08800057103D /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				438F79F72A7C037F0057103D /* SwiftSocket.xcframework in Embed Frameworks */,
+				438F79FA2A7C08800057103D /* SwiftSocket.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				438F79F62A7C037F0057103D /* SwiftSocket.xcframework in Frameworks */,
+				438F79F92A7C08800057103D /* SwiftSocket.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +195,7 @@
 				438F79B02A7BFE320057103D /* Sources */,
 				438F79B12A7BFE320057103D /* Frameworks */,
 				438F79B22A7BFE320057103D /* Resources */,
-				438F79F82A7C037F0057103D /* Embed Frameworks */,
+				438F79FB2A7C08800057103D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
