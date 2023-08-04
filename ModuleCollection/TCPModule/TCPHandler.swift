@@ -37,7 +37,7 @@ class TCPHandler: NSObject {
         let sendResult = client.send(string:request)
         guard sendResult == Result.success else { throw TCPError.sendRequestError(sendResult.error) }
         
-        guard let unEncodedResponse = client.read(1024*10, timeout: Int(Int32.max)), let encodedResponse = String(bytes: unEncodedResponse, encoding: .utf8)
+        guard let unEncodedResponse = client.read(1024*10, timeout: 60*60), let encodedResponse = String(bytes: unEncodedResponse, encoding: .utf8)
         else { throw TCPError.readResponseError }
             
         return encodedResponse

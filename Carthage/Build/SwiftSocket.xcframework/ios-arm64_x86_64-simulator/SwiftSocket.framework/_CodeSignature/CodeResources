@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/SwiftSocket.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		ZhDmvfW107FH4m4UEBBf6oTjq5Y=
+		xbXiiaztFKIBiCPgToNNTSK/GWc=
 		</data>
 		<key>Modules/SwiftSocket.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		eTFQ9Y3EfwVfSAZxWdLw5KRJIGA=
+		JLOulLNTrJaE569VCLKOCxcH3GU=
 		</data>
 		<key>Modules/SwiftSocket.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -81,22 +81,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZhDmvfW107FH4m4UEBBf6oTjq5Y=
+			xbXiiaztFKIBiCPgToNNTSK/GWc=
 			</data>
 			<key>hash2</key>
 			<data>
-			PiunQNav5UzcxOt73YK24+zF1LU9C0k+5CR5stDbQGw=
+			5NzlljGCbLHSx7DQ+Qjv96KNiL8yGF1UCSYX8HUNZaE=
 			</data>
 		</dict>
 		<key>Modules/SwiftSocket.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eTFQ9Y3EfwVfSAZxWdLw5KRJIGA=
+			JLOulLNTrJaE569VCLKOCxcH3GU=
 			</data>
 			<key>hash2</key>
 			<data>
-			sIZyjmZDcrjGMkLJTh+AsSAoOfURusQO0QciZLRrqGU=
+			lRoe+ZxiaQWI8r23S5XTvl6dnyUI/Eya0LNVrRNRVeM=
 			</data>
 		</dict>
 		<key>Modules/SwiftSocket.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
