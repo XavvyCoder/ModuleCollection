@@ -29,17 +29,33 @@ class TCPHandler: NSObject {
     
     func connectToServer() throws -> String {
         client = TCPClient(address: host, port: port)
-        guard let client = client else { throw TCPError.creationError }
+        guard let client = client
+        else {
+            request = ""
+            throw TCPError.creationError
+        }
         
         let connectionResult = client.connect(timeout: 3)
-        guard connectionResult == Result.success else { throw TCPError.connectionError(connectionResult.error) }
+        guard connectionResult == Result.success
+        else {
+            request = ""
+            throw TCPError.connectionError(connectionResult.error)
+        }
         
         let sendResult = client.send(string:request)
-        guard sendResult == Result.success else { throw TCPError.sendRequestError(sendResult.error) }
+        guard sendResult == Result.success
+        else {
+            request = ""
+            throw TCPError.sendRequestError(sendResult.error)
+        }
         
-        guard let unEncodedResponse = client.read(1024*10, timeout: Int(Int32.max)), let encodedResponse = String(bytes: unEncodedResponse, encoding: .utf8)
-        else { throw TCPError.readResponseError }
-            
+        guard let unEncodedResponse = client.read(1024*10, timeout: 60*60), let encodedResponse = String(bytes: unEncodedResponse, encoding: .utf8)
+        else {
+            request = ""
+            throw TCPError.readResponseError
+        }
+        
+        request = ""
         return encodedResponse
     }
 }
