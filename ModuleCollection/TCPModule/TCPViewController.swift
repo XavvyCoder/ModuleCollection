@@ -81,7 +81,7 @@ class TCPViewController: UIViewController {
         guard let hostInput = ipTextField.text, let portTextInput = portTextField.text, let portInput = Int32(portTextInput)
         else { return }
         
-        let request = " ? "
+        let request = " ? " // default tcp connection needed
         
         TCPHandler.shared.configureHostAndPort(host: hostInput, port: portInput)
         TCPHandler.shared.configureRequest(request: request)
