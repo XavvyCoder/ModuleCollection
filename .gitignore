@@ -105,3 +105,6 @@ iOSInjectionProject/
 # End of https://www.gitignore.io/api/xcode,swift,cocoapods
 ModuleCollection.xcodeproj/project.xcworkspace/xcuserdata/mraz9.xcuserdatad/UserInterfaceState.xcuserstate
 ModuleCollection.xcodeproj/project.xcworkspace/xcuserdata/mraz9.xcuserdatad/UserInterfaceState.xcuserstate
+
+.DS_Store
+Carthage/.DS_Store

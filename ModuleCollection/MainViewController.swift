@@ -38,7 +38,6 @@ class MainViewController: UIViewController {
         view.addSubview(tcpButton)
         
         alertButton.addTarget(self, action: #selector(alertButtonTapped), for: .touchUpInside)
-        tcpButton.addTarget(self, action: #selector(tcpButtonTapped), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
             alertButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -60,9 +59,5 @@ class MainViewController: UIViewController {
                                message:"아래 확인 버튼을 누르시면 됩니다.",
                                actionTitle:"확인",
                                actionHandler:nil)
-    }
-    @objc func tcpButtonTapped() {
-        let tcpViewController = TCPViewController()
-        navigationController?.pushViewController(tcpViewController, animated: true)
     }
 }
