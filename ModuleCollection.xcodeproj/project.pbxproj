@@ -23,6 +23,11 @@
 		438F79F32A7C00BE0057103D /* TCPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438F79F22A7C00BE0057103D /* TCPHandler.swift */; };
 		438F79F92A7C08800057103D /* SwiftSocket.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438F79F52A7C037F0057103D /* SwiftSocket.xcframework */; };
 		438F79FA2A7C08800057103D /* SwiftSocket.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 438F79F52A7C037F0057103D /* SwiftSocket.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		43D4FD0D2A9B82FD009833DC /* SampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D4FD0C2A9B82FD009833DC /* SampleModel.swift */; };
+		43D4FD0F2A9B83EC009833DC /* SampleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D4FD0E2A9B83EC009833DC /* SampleService.swift */; };
+		43D4FD112A9B83FC009833DC /* SampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D4FD102A9B83FC009833DC /* SampleViewModel.swift */; };
+		43D4FD132A9B840C009833DC /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D4FD122A9B840C009833DC /* SampleViewController.swift */; };
+		43D4FD152A9B8798009833DC /* GlobalMacros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D4FD142A9B8798009833DC /* GlobalMacros.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +81,11 @@
 		438F79F02A7C00A00057103D /* TCPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCPError.swift; sourceTree = "<group>"; };
 		438F79F22A7C00BE0057103D /* TCPHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCPHandler.swift; sourceTree = "<group>"; };
 		438F79F52A7C037F0057103D /* SwiftSocket.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwiftSocket.xcframework; path = Carthage/Build/SwiftSocket.xcframework; sourceTree = "<group>"; };
+		43D4FD0C2A9B82FD009833DC /* SampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModel.swift; sourceTree = "<group>"; };
+		43D4FD0E2A9B83EC009833DC /* SampleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleService.swift; sourceTree = "<group>"; };
+		43D4FD102A9B83FC009833DC /* SampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewModel.swift; sourceTree = "<group>"; };
+		43D4FD122A9B840C009833DC /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
+		43D4FD142A9B8798009833DC /* GlobalMacros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalMacros.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,16 +138,18 @@
 		438F79B62A7BFE320057103D /* ModuleCollection */ = {
 			isa = PBXGroup;
 			children = (
-				438F79ED2A7C00620057103D /* TCPModule */,
-				438F79EA2A7C00210057103D /* AlertModule */,
-				438F79B72A7BFE320057103D /* AppDelegate.swift */,
-				438F79B92A7BFE320057103D /* SceneDelegate.swift */,
-				438F79BB2A7BFE320057103D /* MainViewController.swift */,
+				43D4FD0B2A9B82A3009833DC /* HTTPModule */,
 				438F79BD2A7BFE320057103D /* Main.storyboard */,
 				438F79C32A7BFE340057103D /* Assets.xcassets */,
 				438F79C52A7BFE340057103D /* LaunchScreen.storyboard */,
 				438F79C82A7BFE340057103D /* Info.plist */,
 				438F79C02A7BFE320057103D /* ModuleCollection.xcdatamodeld */,
+				438F79B72A7BFE320057103D /* AppDelegate.swift */,
+				438F79B92A7BFE320057103D /* SceneDelegate.swift */,
+				438F79BB2A7BFE320057103D /* MainViewController.swift */,
+				43D4FD142A9B8798009833DC /* GlobalMacros.swift */,
+				438F79ED2A7C00620057103D /* TCPModule */,
+				438F79EA2A7C00210057103D /* AlertModule */,
 			);
 			path = ModuleCollection;
 			sourceTree = "<group>";
@@ -183,6 +195,17 @@
 				438F79F52A7C037F0057103D /* SwiftSocket.xcframework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43D4FD0B2A9B82A3009833DC /* HTTPModule */ = {
+			isa = PBXGroup;
+			children = (
+				43D4FD0C2A9B82FD009833DC /* SampleModel.swift */,
+				43D4FD0E2A9B83EC009833DC /* SampleService.swift */,
+				43D4FD102A9B83FC009833DC /* SampleViewModel.swift */,
+				43D4FD122A9B840C009833DC /* SampleViewController.swift */,
+			);
+			path = HTTPModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +341,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				438F79F32A7C00BE0057103D /* TCPHandler.swift in Sources */,
+				43D4FD112A9B83FC009833DC /* SampleViewModel.swift in Sources */,
+				43D4FD132A9B840C009833DC /* SampleViewController.swift in Sources */,
+				43D4FD0D2A9B82FD009833DC /* SampleModel.swift in Sources */,
+				43D4FD152A9B8798009833DC /* GlobalMacros.swift in Sources */,
 				438F79BC2A7BFE320057103D /* MainViewController.swift in Sources */,
 				438F79EC2A7C00410057103D /* AlertHandler.swift in Sources */,
 				438F79F12A7C00A00057103D /* TCPError.swift in Sources */,
@@ -325,6 +352,7 @@
 				438F79B82A7BFE320057103D /* AppDelegate.swift in Sources */,
 				438F79BA2A7BFE320057103D /* SceneDelegate.swift in Sources */,
 				438F79C22A7BFE320057103D /* ModuleCollection.xcdatamodeld in Sources */,
+				43D4FD0F2A9B83EC009833DC /* SampleService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,8 +535,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -535,8 +562,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
